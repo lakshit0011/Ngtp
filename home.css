@@ -359,6 +359,7 @@ nav ul li a {
   align-items: center;
 }
 .photo_gallery_h1 {
+  text-align: center;
   height: 40%;
   color: #032d6c;
   width: 80%;
