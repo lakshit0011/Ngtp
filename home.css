@@ -337,6 +337,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top-right-radius: 20px;
   }
   .all_cards:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
