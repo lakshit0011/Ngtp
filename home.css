@@ -286,4 +286,54 @@ nav ul li a {
   object-fit: cover;
 }
 
-/* gallery end */
+/* client slider */
+.client_slider_container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the slider */
+.client_slider {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  animation: client_slide 20s linear infinite;
+}
+
+.client_slider img {
+  width: 100%;
+  max-width: 12.5%; /* To fit 8 images across the full width */
+  height: auto;
+  margin-left: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+/* Keyframe animation */
+@keyframes client_slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .client_slider img {
+    max-width: 25%; /* Adjust to show fewer images in smaller viewports */
+  }
+}
+
+@media (max-width: 480px) {
+  .client_slider img {
+    max-width: 50%; /* For mobile, show 2 images */
+  }
+}

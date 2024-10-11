@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Basic styling for the slider container */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .client_slider_container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      /* Styling for the slider */
+      .client_slider {
+        display: flex;
+        justify-content: flex-start;
+        animation: slide 20s linear infinite;
+      }
+
+      .client_slider img {
+        width: 100%;
+        max-width: 12.5%; /* To fit 8 images across the full width */
+        height: auto;
+        margin-left: 50px;
+        flex-shrink: 0;
+        border-radius: 50%;
+      }
+
+      /* Keyframe animation */
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      /* Responsive design for smaller screens */
+      @media (max-width: 768px) {
+        .client_slider img {
+          max-width: 25%; /* Adjust to show fewer images in smaller viewports */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .client_slider img {
+          max-width: 50%; /* For mobile, show 2 images */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="client_slider_container">
+      <div class="client_slider">
+        <img src="img1.jpg" alt="Image 1" />
+        <img src="img2.JPG" alt="Image 2" />
+        <img src="img3.JPG" alt="Image 3" />
+        <img src="img4.JPG" alt="Image 4" />
+        <img src="img5.JPG" alt="Image 5" />
+        <img src="img6.JPG" alt="image 5" />
+        <img src="home_img5.jpg" alt="Image 7" />
+        <img src="img1.jpg" alt="Image 8" />
+      </div>
+    </div>
+  </body>
+</html>
