@@ -162,6 +162,7 @@ nav ul li a {
 }
 
 .content-wrapper {
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -201,6 +202,7 @@ nav ul li a {
 .text-container p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #666;
 }
 
 .text-container .btn {
@@ -218,7 +220,7 @@ nav ul li a {
 }
 
 .text-container .btn:hover {
-  background-color: #007bff;
+  background-color: #031735;
 }
 
 /* our services */
@@ -310,5 +312,73 @@ nav ul li a {
 @media (max-width: 480px) {
   .client_slider img {
     max-width: 50%; /* For mobile, show 2 images */
+  }
+}
+
+/* our services */
+.our_company {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.why-us-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #032d6c;
+}
+
+.why-us-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: calc(33% - 2rem);
+  flex-grow: 1;
+}
+
+.card h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #032d6c;
+}
+
+.card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #032d6c;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }
