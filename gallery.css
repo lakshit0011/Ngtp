@@ -1,7 +1,9 @@
 h1 {
+  margin-top: 60px;
   text-align: center;
   margin: 20px 0;
-  color: #333;
+  color: #032d6c;
+  font-size: 30px;
 }
 
 .gallery-container {
