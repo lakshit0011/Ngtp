@@ -403,14 +403,14 @@ footer {
 
 .footer-column {
   flex: 1;
-  min-width: 250px;
+  min-width: 220px;
   margin: 20px 0;
 }
 
 .footer-column h3 {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #032d6c;
+  color: #f1c40f;
 }
 
 .footer-column p,
@@ -435,7 +435,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-  color: #032d6c;
+  color: #f1c40f;
 }
 
 .social-icons a {
@@ -445,11 +445,15 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #032d6c;
+  color: #f1c40f;
 }
 
 .logo img {
   max-width: 150px;
+}
+
+iframe {
+  border: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -459,5 +463,9 @@ footer {
 
   .footer-column {
     text-align: center;
+  }
+
+  iframe {
+    width: 100%;
   }
 }
