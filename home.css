@@ -380,6 +380,84 @@ h1 {
 
 @media (max-width: 768px) {
   .card {
-    width: 100%;
+    width: 90%;
+  }
+}
+
+/* footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px 0;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #032d6c;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column a {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #032d6c;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #032d6c;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    text-align: center;
   }
 }
