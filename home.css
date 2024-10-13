@@ -386,7 +386,7 @@ h1 {
 
 /* footer */
 footer {
-  background-color: #222;
+  background-color: #031735;
   color: #fff;
   padding: 40px 0;
   text-align: left;
@@ -466,7 +466,7 @@ iframe {
 /* secound  coloumn*/
 
 .secound_coloumn h3 {
-  color: #032d6c;
+  color: #fff;
   font-size: 30px;
 }
 .secound_coloumn p,
@@ -481,12 +481,12 @@ a {
   align-items: center;
 }
 .third_column h3 {
-  color: #032d6c;
+  color: #fff;
   font-size: 30px;
 }
 
 .fouth_column h3 {
   text-align: center;
-  color: #032d6c;
+  color: #fff;
   font-size: 30px;
 }
