@@ -296,25 +296,19 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 .card_4 {
-  background-image: url(home_im1.jpg);
+  background-image: url(ser4_img1.jpg);
   background-size: cover; /* Makes sure the image covers the entire div */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
-.card_5 {
-  background-image: url(home_im1.jpg);
-  background-size: cover; /* Makes sure the image covers the entire div */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat;
-}
-.card_6 {
-  background-image: url(home_im1.jpg);
+.card_4:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(ser4_img1.jpg);
   background-size: cover; /* Makes sure the image covers the entire div */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
 
-.card
 /* client slider */
 .client_slider_container h1 {
   color: #032d6c;

@@ -5,24 +5,67 @@
 
     padding: 50px;
   }
-  .all_cards {
-    height: 400px;
-    width: 99%;
+
+  .card_1 {
     background-image: url(home_im1.jpg);
     background-size: cover; /* Makes sure the image covers the entire div */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 20px;
   }
-  .all_cards:hover {
+  .card_1:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
       url(home_im1.jpg);
     background-size: cover; /* Makes sure the image covers the entire div */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat;
+  }
+  .card_2 {
+    background-image: url(card2.jpg);
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  .card_2:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+      url(card2.jpg);
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  .card_3 {
+    background-image: url(img3.JPG);
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  .card_3:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+      url(img3.JPG);
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  .card_4 {
+    background-image: url(ser4_img1.jpg);
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  .card_4:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+      url(ser4_img1.jpg);
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  .all_cards {
+    height: 400px;
+    width: 99%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
   }
 }
 
