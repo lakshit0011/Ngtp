@@ -243,22 +243,78 @@ nav ul li a {
   justify-content: center;
   gap: 50px;
 }
+.cards a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
 .all_cards {
   height: 40%;
-  width: 30%;
+  width: 40%;
+}
 
+.card_1 {
   background-image: url(home_im1.jpg);
   background-size: cover; /* Makes sure the image covers the entire div */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
-.all_cards:hover {
+.card_1:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url(home_im1.jpg);
   background-size: cover; /* Makes sure the image covers the entire div */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
+.card_2 {
+  background-image: url(card2.jpg);
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+.card_2:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(card2.jpg);
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+.card_3 {
+  background-image: url(img3.JPG);
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+.card_3:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(img3.JPG);
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+.card_4 {
+  background-image: url(home_im1.jpg);
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+.card_5 {
+  background-image: url(home_im1.jpg);
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+.card_6 {
+  background-image: url(home_im1.jpg);
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+
+.card
 /* client slider */
 .client_slider_container h1 {
   color: #032d6c;

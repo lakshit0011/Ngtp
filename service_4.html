@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="phone.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="NGTP_LOGO.png" type="image/x-icon" />
+
+    <!-- Font Awesome Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Checkbox for toggling menu -->
+      <input type="checkbox" id="check" />
+
+      <!-- Menu icon -->
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <!-- Site logo -->
+      <img class="logo" src="NGTP_LOGO.png" alt="" />
+
+      <!-- Navigation links -->
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="service_photos"></div>
+    <div class="gallery">
+      <!-- Add 20-25 photos -->
+      <div class="photo"><img src="img1.jpg" alt="Photo 1" /></div>
+      <div class="photo"><img src="img2.JPG" alt="Photo 2" /></div>
+      <div class="photo"><img src="img3.JPG" alt="Photo 3" /></div>
+      <div class="photo"><img src="img4.JPG" alt="Photo 4" /></div>
+      <div class="photo"><img src="img5.JPG" alt="Photo 5" /></div>
+      <div class="photo"><img src="img6.JPG" alt="Photo 6" /></div>
+      <div class="photo"><img src="img1.jpg" alt="Photo 7" /></div>
+      <div class="photo"><img src="img5.JPG" alt="Photo 8" /></div>
+      <div class="photo"><img src="img4.JPG" alt="Photo 9" /></div>
+      <div class="photo"><img src="img3.JPG" alt="Photo 10" /></div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+    </div>
+
+    <!-- gallery end-->
+    <!-- footer-->
+    <footer>
+      <div class="container">
+        <!-- First Column: Logo and Content -->
+        <div class="footer-column First_coloumn">
+          <img src="NGTP_LOGO.png" alt="Logo" />
+          <p class="footer_content">
+            Elevate your celebration <br />
+            with New Gehlot Tent <br />Place - where every event <br />
+            become extraordinary.
+          </p>
+        </div>
+
+        <!-- Second Column: Contact Information -->
+        <div class="footer-column secound_coloumn">
+          <h3>Contact</h3>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>: 123 Street, City, Country
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>:<a href="tel:+9929606126"
+              >9929606126</a
+            >
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>:<a href="tel:+9079241499">
+              9079241499</a
+            >
+          </p>
+          <p><i class="fa-solid fa-envelope"></i>: example@example.com</p>
+          <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Third Column: Useful Links -->
+        <div class="footer-column third_column">
+          <h3>Useful Links</h3>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Gallery</a>
+          <a href="#">Services</a>
+        </div>
+        <!-- Fourth Column: Google Map Embed -->
+        <div class="footer-column fouth_column">
+          <h3>Our Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=YourEmbedCodeHere"
+            width="100%"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const photos = document.querySelectorAll(".photo img");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const close = document.querySelector(".close");
+
+        photos.forEach((photo) => {
+          photo.addEventListener("click", () => {
+            lightbox.style.display = "flex";
+            lightboxImg.src = photo.src;
+          });
+        });
+
+        close.addEventListener("click", () => {
+          lightbox.style.display = "none";
+        });
+
+        lightbox.addEventListener("click", (e) => {
+          if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
