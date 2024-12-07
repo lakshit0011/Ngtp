@@ -6,7 +6,7 @@
     <title>Responsive Image Slider</title>
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="phone.css" />
-    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="contect_us.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -41,30 +41,32 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="aboutus.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contect_us.html">Contact</a></li>
+        <li><a href="contect_us.html">Contact </a></li>
       </ul>
     </nav>
-
-    <div class="service_photos"></div>
-    <div class="gallery">
-      <!-- Add 20-25 photos -->
-      <div class="photo"><img src="ser2_img6.jpg" alt="Photo 1" /></div>
-      <div class="photo"><img src="ser2_img2.JPG" alt="Photo 2" /></div>
-      <div class="photo"><img src="ser2_img3.png" alt="Photo 3" /></div>
-      <div class="photo"><img src="ser2_img2.JPG" alt="Photo 4" /></div>
-      <div class="photo"><img src="ser2_img5.jpg" alt="Photo 5" /></div>
-      <div class="photo"><img src="ser2_img6.jpg" alt="Photo 6" /></div>
-      <div class="photo"><img src="ser2_img7.jpg" alt="Photo 7" /></div>
-      <div class="photo"><img src="ser2_img4.JPG" alt="Photo 8" /></div>
-      <div class="photo"><img src="ser2_img1.JPG" alt="Photo 9" /></div>
+    <div class="nav_block"></div>
+    <div class="about_us_content_box">
+      <div class="img_about_us"><img src="os1.JPG" alt="" /></div>
+      <div class="content_about_us">
+        <h1>About us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+          natus inventore obcaecati corporis excepturi doloribus modi
+          dignissimos, similique quidem hic ad totam eos asperiores, recusandae
+          aliquid dolor cupiditate maiores adipisci!logo Lorem ipsum dolor sit
+          Saepe accusamus, inventore quas adipisci sed nulla laborum distinctio
+          dolore dolores, reiciendis nisi quasi quod iure quae iste quaerat
+          itaque delectus! Nemo! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Cumque porro nam commodi iste ullam similique? Dolor
+          nesciunt alias eligendi cumque commodi ipsam obcaecati nam adipisci
+          ea. Atque iste eius laboriosam! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Qui, fugit tenetur. Dignissimos deserunt neque
+          praesentium rerum provident perspiciatis debitis, autem assumenda
+          nostrum magnam explicabo vel voluptate consequatur? Perferendis, quia
+          sapiente?
+        </p>
+      </div>
     </div>
-
-    <div class="lightbox" id="lightbox">
-      <span class="close">&times;</span>
-      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
-    </div>
-
-    <!-- gallery end-->
     <!-- footer-->
     <footer>
       <div class="container">
@@ -128,30 +130,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const photos = document.querySelectorAll(".photo img");
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImg = document.getElementById("lightbox-img");
-        const close = document.querySelector(".close");
-
-        photos.forEach((photo) => {
-          photo.addEventListener("click", () => {
-            lightbox.style.display = "flex";
-            lightboxImg.src = photo.src;
-          });
-        });
-
-        close.addEventListener("click", () => {
-          lightbox.style.display = "none";
-        });
-
-        lightbox.addEventListener("click", (e) => {
-          if (e.target !== lightboxImg) {
-            lightbox.style.display = "none";
-          }
-        });
-      });
-    </script>
   </body>
 </html>
